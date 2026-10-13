@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A Web Page</title>
+</head>
+<body>
+
+    <!-- Header Browser / Judul Halaman -->
+    <p>A Web Page</p>
+    <hr>
+
+    <!-- Navigasi -->
+    <p align="center">
+        <a href="PraktikumMandiri.html">Home</a> | 
+        <a href="#">Register</a> | 
+        <a href="#">Policy</a> | 
+        <a href="#">About</a>
+    </p>
+    <hr>
+
+    <form>
+        <!-- Konten Utama dalam Tabel agar Terstruktur -->
+        <table border="0" cellpadding="5">
+            <tr valign="top">
+                <!-- Gambar Placeholder -->
+                <td>
+                    <img src="MacbookAir.jpg" alt="Placeholder Gambar">
+                </td>
+
+                <!-- Form & Detail Produk -->
+                <td>
+                    <table border="0" cellpadding="5">
+                        <tr>
+                            <td><b>Title Here :</b></td>
+                            <td>MacBook Air £800</td>
+                        </tr>
+                        <tr>
+                            <td><b>Description :</b></td>
+                            <td>
+                                Year : 2009<br>
+                                Model :<br>
+                                Condition : Mint
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Total Amount :</b></td>
+                            <td>£800</td>
+                        </tr>
+                        <tr>
+                            <td><b>Pay to :</b></td>
+                            <td>123-456-789-0</td>
+                        </tr>
+                        <tr>
+                            <td><label for="payment_type"><b>Payment Type :</b></label></td>
+                            <td>
+                                <select id="payment_type" name="payment_type">
+                                    <option value="visa">Visa Debit</option>
+                                    <option value="mastercard">MasterCard</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="account_holder"><b>Account Holder :</b></label></td>
+                            <td>
+                                <input type="text" id="account_holder" name="account_holder" value="Name Here">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="account_no"><b>Account No :</b></label></td>
+                            <td>
+                                <input type="text" id="account_no" name="account_no" value="123-456-789-0">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="checkbox" id="send_phone" name="send_phone" checked>
+                                <label for="send_phone">Send to Mobile Phone</label>
+                                <br>
+                                <input type="checkbox" id="send_email" name="send_email" checked>
+                                <label for="send_email">Email me copy of transaction</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="phone_numbers"><b>Send to Mobile Phone :</b></label></td>
+                            <td>
+                                <input type="text" id="phone_numbers" name="phone_numbers" value="1234567890, 1234567891" size="30">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="email_addresses"><b>Send to Email :</b></label></td>
+                            <td>
+                                <input type="text" id="email_addresses" name="email_addresses" value="mfmm2g13@soton.ac.uk, fys_06@yahoo.com" size="35">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <br><br>
+        <p align="center">
+            <input type="submit" value="Generate Panda Link">
+        </p>
+    </form>
+
+    <hr>
+
+</body>
+</html>

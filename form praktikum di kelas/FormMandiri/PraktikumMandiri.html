@@ -7,25 +7,23 @@
 </head>
 <body>
   <center>
-  <fieldset style="display: inlinecent;">
-    <a href="#">Home</a> |
-    <a href="#">Register</a> |
+  <fieldset>
+    <a href="PraktikumMandiri.html">Home</a> |
+    <a href="hasil.html">Generate Link</a> |
+    <a href="#">Transaction History</a> |
     <a href="#">Policy</a> |
-    <a href="#">About</a>
+    <a href="#">Logout</a>
   </fieldset>
-</center>
-  <div style="display: flex; gap: 20px; align-items: flex-start;">
-  <div style="width: 200px; text-align: center;">
-    <div style="border: 1px solid #f0f0f0; height: 200px; display: flex; align-items: center; justify-content: center; background: #eee; margin-bottom: 5px;">
-      <span style="font-size: 40px; color: #888;">X</span>
-    </div>
-    <input type="file" id="upload" style="display: none;">
-    <label for="upload" style="display: inline-block; padding: 5px 10px; background: #d900f6; color: white; border: 1px solid #bbb; cursor: pointer;">
+  </center>
+  <div>
+  <div>
+    <input type="file" id="upload">
+    <label for="upload">
       Upload Picture
     </label>
   </div>
 
-  <div style="flex-grow: 1;">
+  <div>
       <p>
         <label for="namabarang">Nama Barang:</label>
         <input type="text" id="namabarang" name="namabarang" required>
@@ -58,34 +56,32 @@
  <p><input type="text" id="namapengguna" name="namapengguna" placeholder="Masukkan nama pengguna" required></p>
   <p><input type="number" inputmode="numeric" min="0" max="100" placeholder="Masukkan jumlah"></p>
   <!-- Checkbox Opsi -->
-    <div style="margin-top: 10px;">
+    <div>
       <label><input type="checkbox" checked> Send to Mobile Phone</label><br>
       <label><input type="checkbox" checked> Send to Email</label>
     </div>
 
                
-      <table style="width: 100%; margin-top: 15px; border-spacing: 0 8px;">
+      <table>
           <tr>
-            <td style="width: 150px;">Send to Mobile Phone</td>
+            <td>Send to Mobile Phone</td>
             <td>
-                <input type="text" name="send_phone" inputmode="numeric" placeholder="Contoh: 85697057811,3`123014124123" style="width: 100%;">
+                <input type="text" name="send_phone" inputmode="numeric" placeholder="Contoh: 85697057811,3`123014124123">
             </td>
           </tr>
           <tr>
           <td>Send to Email</td>
             <td>
-             <input type="text" name="send_email" placeholder="Contoh: mfmmig13@aston.ac.uk, fyx_06@yahoo.com" style="width: 100%;">
+             <input type="text" name="send_email" placeholder="Contoh: mfmmig13@aston.ac.uk, fyx_06@yahoo.com">
             </td>
           </tr>
         </table>
 
      </div>
   </div>
-
-        <!-- Tombol Aksi di Bagian Akhir -->
-  <div style="text-align: center; margin-top: 30px;">
-      <button type="submit" style="background-color: #e300fc; color: white; padding: 10px 30px; font-weight: bold; border: none; cursor: pointer;">
-         Generate Nobr Link
+  <div>
+      <button type="submit">
+         <a href="hasil.html">Generate Panda Link</a>
       </button>
     </div>
   </div>
