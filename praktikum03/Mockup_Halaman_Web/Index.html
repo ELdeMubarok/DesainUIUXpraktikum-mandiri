@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Directory Profile Page</title>
+  <style>
+    /* Reset & Styling Dasar */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+      color: #333;
+    }
+
+    /* Container Utama pembungkus seluruh halaman */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: #fff;
+      border: 2px solid #333;
+      padding: 25px;
+    }
+
+    /* Header Title */
+    .main-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 8px;
+    }
+
+    /* === BARIS ATAS: Foto, Biodata, & Kategori (Flexbox) === */
+    .profile-top {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 25px;
+    }
+    
+    .profile-avatar {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border: 2px solid #333;
+    }
+
+    .profile-info {
+      flex: 2;
+    }
+
+    .profile-info h1 {
+      font-size: 26px;
+      margin-bottom: 12px;
+    }
+
+    .profile-info p {
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 4px;
+    }
+
+    .profile-info a {
+      color: #0000ff;
+      text-decoration: underline;
+    }
+
+    .categories-box {
+      flex: 1;
+      text-align: right;
+    }
+
+    .categories-box h3 {
+      text-decoration: underline;
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .categories-box ul {
+      list-style: none;
+    }
+
+    .categories-box li {
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    /* === BARIS TENGAH: Deskripsi Diri (2 Paragraf) === */
+    .profile-bio {
+      margin-bottom: 25px;
+    }
+
+    .profile-bio p {
+      text-align: justify;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    /* === BARIS BAWAH: Video, Galeri Foto, & Attachments (Flexbox) === */
+    .multimedia-section {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    /* Pemutar Video */
+    .video-container {
+      flex: 1;
+    }
+
+    .video-container video {
+      width: 100%;
+      height: 150px;
+      border: 2px solid #333;
+      background-color: #000;
+    }
+
+    /* Koleksi Foto Grid 2x2 */
+    .photo-gallery {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      align-items: start;
+    }
+
+    .photo-gallery img {
+      width: 100%;
+      height: auto;
+      border: 2px solid #333;
+    }
+
+    /* Lampiran File (Attachments) */
+    .attachments-box {
+      flex: 1;
+      border: 1px solid #333;
+      padding: 10px;
+      border-radius: 4px;
+      min-width: 0;
+    }
+
+    .attachments-title {
+      font-weight: bold;
+      font-size: 14px;
+      padding: 0 5px;
+    }
+
+    .attachments-list {
+      list-style: none;
+    }
+
+    .attachments-list li {
+      margin-bottom: 8px;
+      font-size: 13px;
+    }
+
+    .attachments-list a {
+      color: #0000ff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="main-title">Halaman Profil</div>
+
+    <!-- Bagian Atas: Foto, Biodata & Categories -->
+    <div class="profile-top">
+      <img src="Hadid.jpeg" alt="Foto Diri" class="profile-avatar">
+      
+      <div class="profile-info">
+        <h1>Muhammad Hadid Mubarok</h1>
+        <p>Kp. Parung Serab Jl. Batan no.7</p>
+        <p>NIM: 0110226070</p>
+        <p>Depok, 29 April 2008</p>
+        <p>Email: <a href="mailto:muhammadhadidmubarok@gmail.com">muhammadhadidmubarok@gmail.com</a></p>
+        <p>Telephone: 0856 9705 7811</p>
+      </div>
+
+      <div class="categories-box">
+        <h3>Minat dan Keahlian</h3>
+        <ul>
+          <li>Game Development</li>
+          <li>Web Development</li>
+          <li>Graphic Design</li>
+          <li>Photography</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="profile-bio">
+      <p>
+       Halo Perkenalkan saya Muhammad Hadid Mubarok, saya lahir di Depok pada tanggal 29 April 2008. saya adalah seorang Mahasiswa STT Terpadu Nurul Fikri. saya memeiliki hobi bermain game, membaca buku, dan menonton film. saya juga memiliki ketertarikan dalam bidang teknologi dan pemrograman. saya berharap dapat mengembangkan kemampuan saya di bidang ini dan berkontribusi dalam proyek-proyek yang menarik seperti membuat game atau pun merancang aplikasi.
+      </p>
+      <p>
+        Saya juga memiliki minat di bidang Design Poster dan Grafis berikut hasil hasil yang pernah saya buat. saya berharap dapat terus belajar dan mengembangkan kemampuan saya di bidang ini, serta berkolaborasi dengan orang-orang yang memiliki minat yang sama untuk menciptakan karya-karya yang kreatif dan inovatif.
+        
+    </div>
+
+
+    <div class="multimedia-section">
+      
+      <div class="video-container">
+        <video controls>
+          <source src="" type="video/mp4">
+          Browser Anda tidak mendukung tag video.
+        </video>
+      </div>
+
+      <div class="photo-gallery">
+        <img src="poster1.jpeg" alt="Foto 1">
+        <img src="poster2.jpeg" alt="Foto 2">
+        <img src="poster3.jpeg" alt="Foto 3">
+        <img src="poster4.jpeg" alt="Foto 4">
+      </div>
+
+
+      <fieldset class="attachments-box">
+        <legend class="attachments-title">Attachments</legend>
+        <ul class="attachments-list">
+          <li>📄 <a href="Tugas_Praktikum1_P3_Desainpemweb.pdf" download>Tugas Praktikum 1</a></li>
+          <li>📄 <a href="Tugas_Praktikum2_P5_Desainpemweb.pdf" download>Tugas Praktikum 2</a></li>
+        </ul>
+      </fieldset>
+
+    </div>
+  </div>
+
+</body>
+</html>
+    
+</body>
+</html>
