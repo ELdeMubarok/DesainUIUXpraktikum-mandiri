@@ -119,14 +119,15 @@
 
     /* Pemutar Video */
     .video-container {
-      flex: 1;
+      flex: 2;
+      min-width: 0;
     }
 
-    .video-container video {
+    .video-container iframe {
+      display: block;
       width: 100%;
-      height: 150px;
+      aspect-ratio: 16 / 9;
       border: 2px solid #333;
-      background-color: #000;
     }
 
     /* Koleksi Foto Grid 2x2 */
@@ -171,6 +172,18 @@
     .attachments-list a {
       color: #0000ff;
       text-decoration: underline;
+    }
+
+    @media (max-width: 700px) {
+      .multimedia-section {
+        flex-direction: column;
+      }
+
+      .video-container,
+      .photo-gallery,
+      .attachments-box {
+        width: 100%;
+      }
     }
   </style>
 </head>
@@ -217,10 +230,13 @@
     <div class="multimedia-section">
       
       <div class="video-container">
-        <video controls>
-          <source src="" type="video/mp4">
-          Browser Anda tidak mendukung tag video.
-        </video>
+        <iframe
+          src="https://www.youtube.com/embed/S6_pO9xj4iM"
+          title="The Larping Tombstone - Looping the Rooms (Larping the Rooms) (Remix)"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
       </div>
 
       <div class="photo-gallery">
